@@ -7,6 +7,11 @@ function inverso() {
   num.value = 1/num.value;
 }
 
+function sqrt() {
+  var num = document.getElementById("n1");
+  num.value = Math.sqrt(num.value);
+}
+
 function vaciar() {
   document.getElementById("n1").value = "";
 }
@@ -15,8 +20,8 @@ function vaciar() {
 </head>
 <body>
   Número:
-  <input type="text" id="n1" onclick="vaciar()"><p>  
+  <input type="text" id="n1" onclick="vaciar()"><p>
   <button onclick="inverso()"> 1/x </button>
+  <button onclick="sqrt()"> sqrt(x)</button>
 </body>
 </html>
-
